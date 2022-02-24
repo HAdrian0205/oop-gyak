@@ -11,14 +11,14 @@ public class pontok1 {
 		int n;
 
 		for (int i = 0; i < 5; i++) {
-			System.out.println("Adja meg a(z) " + (i+1) + ". ember nevét: ");
+			System.out.println("Adja meg a(z) " + (i+1) + ". ember nevÃ©t: ");
 			String nev = input.nextLine();
 			n = emailSize();
 			number[i] = n;
 			namesAndEmails[i] = new String[n+1];
 			namesAndEmails[i][0] = nev;
 			for (int j = 1; j <= n; j++) {
-				System.out.println("Adja meg a(z) " + (i+1) + ". ember " + j + ". email címét: ");
+				System.out.println("Adja meg a(z) " + (i+1) + ". ember " + j + ". email cÃ­mÃ©t: ");
 				namesAndEmails[i][j] = input.nextLine();
 			}
 		}
@@ -26,14 +26,14 @@ public class pontok1 {
 		System.out.println();
 		for(int i = 0; i < 5; i++) {
 			if (number[i] != 0) {
-				System.out.println("Név: " + namesAndEmails[i][0]);
+				System.out.println("NÃ©v: " + namesAndEmails[i][0]);
 				for (int j = 1; j <= number[i]; j++) {
-					System.out.println("	"+ j + ". email cím: " + namesAndEmails[i][j]);
+					System.out.println("	"+ j + ". email cÃ­m: " + namesAndEmails[i][j]);
 				}
 			}
 		}
 		System.out.println();
-		System.out.println("Kinek van több email címe?");
+		System.out.println("Kinek van tÃ¶bb email cÃ­me?");
 		
 		for (int i = 0; i < 5; i++) {
 			if (number[i] == 0) {
@@ -50,7 +50,7 @@ public class pontok1 {
 		int n = 0;
 		
 		do {
-			System.out.println("Hány email cimet szeretne megadni a kovetkezo embernek? (0-3)");
+			System.out.println("HÃ¡ny email cimet szeretne megadni a kovetkezo embernek? (0-3)");
 			while (!input.hasNextInt()) {
 				System.out.println("Ez nem egy szam! Adja meg ujra!");
 			input.next();
