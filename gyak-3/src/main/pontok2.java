@@ -93,7 +93,7 @@ public class pontok2 {
 		while (true) {
 			System.out.println("Adja meg az első számot (egész)");
 			while (!input.hasNextInt()) {
-				System.out.println("Ez nem egy szam! Adja meg ujra!");
+				System.out.println("Ez nem egy szám! Adja meg újra!");
 			input.next();
 			}
 			n = input.nextInt();
@@ -103,7 +103,7 @@ public class pontok2 {
 		while (true) {
 			System.out.println("Adja meg a masodik számot (egész)");
 			while (!input.hasNextInt()) {
-				System.out.println("Ez nem egy szam! Adja meg ujra!");
+				System.out.println("Ez nem egy szám! Adja meg újra!");
 			input.next();
 			}
 			m = input.nextInt();
