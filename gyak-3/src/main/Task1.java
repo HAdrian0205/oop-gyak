@@ -24,7 +24,7 @@ public class Task1 {
 		for (int i = 0; i < tomb.length; i++) {
 			for (int j = 0; j < tomb[i].length; j++) {
 				
-				System.out.println("A tomb " + (i+1) + ". sorának " + (j+1) + ". eleme: " + tomb[i][j]);
+				System.out.println("A tomb " + (i+1) + ". sorÃ¡nak " + (j+1) + ". eleme: " + tomb[i][j]);
 			}
 			System.out.println();
 		}
@@ -35,7 +35,7 @@ public class Task1 {
 		for (int i = 0; i < tomb.length; i++) {
 			for (int j = 0; j < tomb[i].length; j++) {
 				if ((i == a.x) && (j == a.y)) {
-					System.out.println("A tomb keresett " + (i+1) + ". sorának " + (j+1) + ". eleme: " + tomb[i][j]);					
+					System.out.println("A tomb keresett " + (i+1) + ". sorÃ¡nak " + (j+1) + ". eleme: " + tomb[i][j]);					
 				}
 
 			}
@@ -47,18 +47,18 @@ public class Task1 {
 		int n = 0;
 		int m = 0;
 		do {
-			System.out.println("Adja meg a sorszámot (1-3)");
+			System.out.println("Adja meg a sorszÃ¡mot (1-3)");
 			while (!input.hasNextInt()) {
-				System.out.println("Ez nem egy szám.");
+				System.out.println("Ez nem egy szÃ¡m.");
 				input.next();
 			}
 			n = input.nextInt();
 		} while (n<1 || n>3);
 		
 		do {
-			System.out.println("Adja meg az oszlop számot (1-3)");
+			System.out.println("Adja meg az oszlop szÃ¡mot (1-3)");
 			while (!input.hasNextInt()) {
-				System.out.println("Ez nem egy szám.");
+				System.out.println("Ez nem egy szÃ¡m.");
 				input.next();
 			}
 			m = input.nextInt();
