@@ -35,14 +35,18 @@ public class pontok1 {
 		System.out.println();
 		System.out.println("Kinek van több email címe?");
 		
+		boolean noone = true;
 		for (int i = 0; i < 5; i++) {
 			if (number[i] == 0) {
 				continue;
 			} else if (number[i] > 1) {
 				System.out.println(namesAndEmails[i][0] + "-nak/nek: " + number[i] + "db");
+				noone = false;
 			}
 		}
-			
+		if (noone == true) {
+			System.out.println("Senkinek nincs 1-nél több email címe.");
+		}
 	}
 	
 	static int emailSize() {
@@ -50,9 +54,9 @@ public class pontok1 {
 		int n = 0;
 		
 		do {
-			System.out.println("Hány email cimet szeretne megadni a kovetkezo embernek? (0-3)");
+			System.out.println("Hány email címet szeretne megadni a következő embernek? (0-3)");
 			while (!input.hasNextInt()) {
-				System.out.println("Ez nem egy szam! Adja meg ujra!");
+				System.out.println("Ez nem egy szám! Adja meg újra!");
 			input.next();
 			}
 			n = input.nextInt();
