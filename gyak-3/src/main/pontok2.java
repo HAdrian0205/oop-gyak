@@ -22,9 +22,9 @@ public class pontok2 {
 		
 		Scanner input = new Scanner(System.in);
 		do {
-			System.out.println("Az elsõ vagy a második input mód? (1-2)");
+			System.out.println("Az elsÅ‘ vagy a mÃ¡sodik input mÃ³d? (1-2)");
 			while (!input.hasNextInt()) {
-				System.out.println("Hibás bevitel!");
+				System.out.println("HibÃ¡s bevitel!");
 			input.next();
 			}
 			n = input.nextInt();
@@ -42,14 +42,14 @@ public class pontok2 {
 		calculate(a,b,op);
 		
 		System.out.println();
-		System.out.println("Szeretne új mûveletet megadni?");
+		System.out.println("Szeretne Ãºj mÅ±veletet megadni?");
 		input.nextLine();
 		while(true) {
 			question = input.nextLine();
 			if (question.equals("igen") || question.equals("Igen") || question.equals("nem") || question.equals("Nem")) {
 				break;
 			} else {
-				System.out.println("Hibás bevitel! Adja meg újra!");
+				System.out.println("HibÃ¡s bevitel! Adja meg Ãºjra!");
 				System.out.println();
 				continue;
 			}
@@ -66,17 +66,17 @@ public class pontok2 {
 		switch (op) {
 		
 		case '+':
-			System.out.println("A két szám összege: " + (a+b));
+			System.out.println("A kÃ©t szÃ¡m Ã¶sszege: " + (a+b));
 			break;
 		case '-':
-			System.out.println("A két szám különbsége: " + (a-b));
+			System.out.println("A kÃ©t szÃ¡m kÃ¼lÃ¶nbsÃ©ge: " + (a-b));
 			break;
 		case '*':
-			System.out.println("A két szám szorzata: " + (a*b));
+			System.out.println("A kÃ©t szÃ¡m szorzata: " + (a*b));
 			break;
 		case '/':
 			double div = (double)a/b;
-			System.out.println("A két szám hányadosa: " + div);
+			System.out.println("A kÃ©t szÃ¡m hÃ¡nyadosa: " + div);
 			break;
 		default:
 			break;
@@ -91,7 +91,7 @@ public class pontok2 {
 		ret vissza = new ret();
 		
 		while (true) {
-			System.out.println("Adja meg az elsõ számot (egész)");
+			System.out.println("Adja meg az elsÅ‘ szÃ¡mot (egÃ©sz)");
 			while (!input.hasNextInt()) {
 				System.out.println("Ez nem egy szam! Adja meg ujra!");
 			input.next();
@@ -101,7 +101,7 @@ public class pontok2 {
 		}
 		
 		while (true) {
-			System.out.println("Adja meg a masodik számot (egész)");
+			System.out.println("Adja meg a masodik szÃ¡mot (egÃ©sz)");
 			while (!input.hasNextInt()) {
 				System.out.println("Ez nem egy szam! Adja meg ujra!");
 			input.next();
@@ -111,10 +111,10 @@ public class pontok2 {
 		} 
 		
 		while (true) {
-			System.out.println("Milyen mûveletet szeretne végrehajtani? (+, -, *, /)");
+			System.out.println("Milyen mÅ±veletet szeretne vÃ©grehajtani? (+, -, *, /)");
 			op = (char)input.next().charAt(0);
 			if ((op != '+') && (op != '-') && (op != '*') && (op != '/')) {
-				System.out.println("Hibás bevitel! Adja meg újra!");
+				System.out.println("HibÃ¡s bevitel! Adja meg Ãºjra!");
 				System.out.println();
 				input.nextLine();
 				continue;
@@ -133,7 +133,7 @@ public class pontok2 {
 	static ret operandsSecondType() {
 		ret vissza = new ret();
 		
-		System.out.println("Adj meg egy mûveletet (pl. 1 + 2)");
+		System.out.println("Adj meg egy mÅ±veletet (pl. 1 + 2)");
 		Scanner input = new Scanner(System.in);
 		String inString = input.nextLine(); 
 		String[] strArray = inString.split(" ");
